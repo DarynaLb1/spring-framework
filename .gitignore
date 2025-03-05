@@ -1,36 +1,37 @@
-# Miscellaneous
+# Загальні тимчасові файли
 *.java.hsp
 *.sonarj
 *.sw*
 .DS_Store
-build.sh
-integration-repo
-ivy-cache
 argfile*
-activemq-data/
-classes/
+cached-antora-playbook.yml
 
-# Log files
+# Логи
 jxl.log
 jmx.log
 derby.log
 
-# Gradle artifacts
+# Файли збірки та кеші
+/build
+build.sh
+buildSrc/build
 .gradle
 .gradletasknamecache
-/build
-buildSrc/build
+ivy-cache
+activemq-data/
+
+# Gradle
 /spring-*/build
 /framework-*/build
 /integration-tests/build
 /src/asciidoc/build
 spring-test/test-output/
 
-# Maven artifacts
+# Maven
 pom.xml
 /target/
 
-# Eclipse artifacts, including WTP generated manifests
+# Eclipse
 bin
 .classpath
 .project
@@ -38,7 +39,7 @@ bin
 .springBeans
 spring-*/src/main/java/META-INF/MANIFEST.MF
 
-# IDEA artifacts and output dirs
+# IntelliJ IDEA
 *.iml
 *.ipr
 *.iws
@@ -51,7 +52,11 @@ atlassian-ide-plugin.xml
 # VS Code
 .vscode/
 
-cached-antora-playbook.yml
-
+# Node.js
 node_modules
+
+# Kotlin
 /.kotlin/
+
+# Інші артефакти та тимчасові файли
+integration-repo
